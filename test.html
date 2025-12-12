@@ -472,20 +472,92 @@
     </video>
 
     <!-- Navigation -->
-    <div class="row nav-row transparent align-items-center px-md-5 py-md-4 position-relative" id="navbar"
-      style="z-index:1;">
-      <div class="col-sm-4 col-md-3">
-        <a href="https://www.wix.com/demone2/autono" class="fw-bold text-white">AUTONO</a>
-      </div>
-      <div class="col-sm-8 col-md-9 d-flex justify-content-end">
-        <ul class="nav-list list-unstyled d-flex gap-3 mb-0">
-          <li><a href="https://www.wix.com/demone2/autono/technology" class="text-white">Technology</a></li>
-          <li><a href="https://www.wix.com/demone2/autono/about" class="text-white">About</a></li>
-          <li><a href="https://www.wix.com/demone2/autono/careers" class="text-white">Careers</a></li>
-          <li><a href="#" class="text-white">More</a></li>
-        </ul>
-      </div>
+   <!-- Custom Navbar Row -->
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg bg-transparent px-md-5 py-md-4" style="z-index:1000;">
+  <div class="container-fluid">
+
+    <!-- Brand -->
+    <a href="https://www.wix.com/demone2/autono" 
+       class="navbar-brand fw-bold text-black" 
+       style="letter-spacing:3px;">
+       AUTONO
+    </a>
+
+    <!-- Desktop links (visible on lg+) -->
+    <div class="d-none d-lg-flex ms-auto">
+      <ul class="navbar-nav gap-3 mb-0">
+        <li class="nav-item">
+          <a href="https://www.wix.com/demone2/autono/technology" class="nav-link text-black">Technology</a>
+        </li>
+        <li class="nav-item">
+          <a href="https://www.wix.com/demone2/autono/about" class="nav-link text-black">About</a>
+        </li>
+        <li class="nav-item">
+          <a href="https://www.wix.com/demone2/autono/careers" class="nav-link text-black">Careers</a>
+        </li>
+        <li class="nav-item">
+          <!-- "More" styled as button -->
+          <a href="#" 
+             class="btn btn-dark rounded-3 border  text-white"
+             style="transition:all 0.3s;">
+             Subscribe
+          </a>
+        </li>
+      </ul>
     </div>
+
+    <!-- Mobile toggler (visible on < lg) -->
+    <button class="navbar-toggler d-lg-none border-0" type="button"
+            data-bs-toggle="offcanvas" data-bs-target="#navOverlay" aria-controls="navOverlay"
+            aria-label="Toggle navigation" style="filter: invert(100%);">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  </div>
+</nav>
+
+<!-- Fullscreen white overlay (hidden by default; opens on toggler click) -->
+<div class="offcanvas offcanvas-top d-lg-none" tabindex="-1" id="navOverlay"
+     style="height:100vh; background:white; z-index:9999;">
+  <div class="offcanvas-body p-0 d-flex flex-column justify-content-center align-items-center h-100">
+    <ul class="list-unstyled text-center">
+      <li class="mb-3"><a href="https://www.wix.com/demone2/autono/technology" class="fs-3 text-black">Technology</a></li>
+      <li class="mb-3"><a href="https://www.wix.com/demone2/autono/about" class="fs-3 text-black">About</a></li>
+      <li class="mb-3"><a href="https://www.wix.com/demone2/autono/careers" class="fs-3 text-black">Careers</a></li>
+      <li class="mb-3">
+        <!-- "More" styled as button inside overlay -->
+        <a href="#" 
+           class="btn btn-dark rounded-3 border  text-white fs-3"
+           style="transition:all 0.3s;">
+           Subscribe
+        </a>
+      </li>
+    </ul>
+
+    <!-- Close button -->
+    <button type="button" class="btn btn-outline-dark mt-4 rounded-3" data-bs-dismiss="offcanvas" aria-label="Close">
+      Close
+    </button>
+  </div>
+</div>
+
+<!-- Bootstrap CSS & JS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- Custom hover style -->
+<style>
+  .btn-dark:hover {
+    background-color: white !important;
+    color: black !important;
+    border: 1px solid black !important;
+  }
+</style>
+
+
+
+
+
 
     <!-- Hero text -->
     <div class="hero-content text-black position-relative d-flex flex-column justify-content-start"
@@ -545,7 +617,7 @@
       <!-- Text column -->
       <div
         class="col-12 col-md-5 service-box-dark bg-black text-white p-5 h-auto d-flex flex-column gap-3 align-content-center justify-content-center m-auto"
-        style="width: 35rem;">
+        style="width: 25rem;">
 
         <p class="vision-text mb-3 p-4">VISION</p>
 
@@ -1024,46 +1096,71 @@
         <div class="col-12 col-md-6 mb-4 mb-md-0">
           <img
             src="https://static.wixstatic.com/media/c837a6_3a4f054db4424af1b034f96ddd7b691a~mv2.jpg/v1/fill/w_490,h_760,al_r,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/c837a6_3a4f054db4424af1b034f96ddd7b691a~mv2.jpg"
-            alt="Autono numbers image" class="img-fluid rounded shadow"
-            style="object-fit: contain; width:100%; height:auto;">
+            alt="Autono numbers image" class="img-fluid rounded" style="object-fit: contain; width:100%; height:auto;">
         </div>
 
         <!-- Right col-md-6 col-12: content -->
-        <div class="col-12 col-md-6">
-          <h2 class="fw-bold mb-4">Autono In Numbers</h2>
+        <div class="col-12 col-md-6 d-flex flex-column" style="gap:6rem;">
 
-          <!-- Grid of stats -->
-          <div class="row g-4">
-            <div class="col-md-6 col-12 text-center">
-              <div class="stat-box">
-                <div class="stat-value">200</div>
-                <div class="stat-label">EMPLOYEES</div>
-              </div>
-            </div>
-            <div class="col-md-6 col-12 text-center">
-              <div class="stat-box">
-                <div class="stat-value">5</div>
-                <div class="stat-label">CORE TEAMS</div>
-              </div>
-            </div>
-            <div class="col-md-6 col-12 text-center">
-              <div class="stat-box">
-                <div class="stat-value">200M$</div>
-                <div class="stat-label">CAPITAL</div>
-              </div>
-            </div>
-            <div class="col-md-6 col-12 text-center">
-              <div class="stat-box">
-                <div class="stat-value">326</div>
-                <div class="stat-label">PARTNERS</div>
-              </div>
-            </div>
+          <!-- Heading -->
+          <div>
+            <h2 class="text" style="font-weight:400; font-size:clamp(20px,2vw,28px); margin:0;padding-left: 15%;">
+              Autono In Numbers
+            </h2>
           </div>
-        </div>
 
+          <div class="d-grid" style="grid-template-columns:1fr 1fr; gap:6rem;">
+  <!-- Stat 1 -->
+  <div class="mx-auto text-start" style="max-width:200px;">
+    <div style="font-size:clamp(24px,2vw,32px); font-weight:600;">
+      <span style="border-bottom:5px solid black; display:inline-block; line-height:1; margin-bottom:-6px; padding-bottom:2px;">2</span>
+      <span style="display:inline-block;">00</span>
+    </div>
+    <div style="font-size:clamp(14px,1.2vw,16px); font-weight:400; border-top:2px solid black; padding-top:0.5rem; margin-top:-2px;">
+      EMPLOYEES
+    </div>
+  </div>
+
+  <!-- Stat 2 -->
+  <div class="mx-auto text-start" style="max-width:200px;">
+    <div style="font-size:clamp(24px,2vw,32px); font-weight:600; " >
+      <span style="border-bottom:5px solid black; display:inline-block; line-height:1; margin-bottom:-6px; padding-bottom:2px;">5</span>
+    </div>
+    <div style="font-size:clamp(14px,1.2vw,16px); font-weight:400; border-top:2px solid black; padding-top:0.5rem; margin-top:-2px;">
+      CORE TEAMS
+    </div>
+  </div>
+
+  <!-- Stat 3 -->
+  <div class="mx-auto text-start" style="max-width:200px;">
+    <div style="font-size:clamp(24px,2vw,32px); font-weight:600;">
+      <span style="border-bottom:5px solid black; display:inline-block; line-height:1; margin-bottom:-6px; padding-bottom:2px;">2</span>
+      <span style="display:inline-block;">00M$</span>
+    </div>
+    <div style="font-size:clamp(14px,1.2vw,16px); font-weight:400; border-top:2px solid black; padding-top:0.5rem; margin-top:-2px;">
+      CAPITAL
+    </div>
+  </div>
+
+  <!-- Stat 4 -->
+  <div class="mx-auto text-start" style="max-width:200px;">
+    <div style="font-size:clamp(24px,2vw,32px); font-weight:600;">
+      <span style="border-bottom:5px solid black; display:inline-block; line-height:1; margin-bottom:-6px; padding-bottom:2px;">3</span>
+      <span style="display:inline-block;">26</span>
+    </div>
+    <div style="font-size:clamp(14px,1.2vw,16px); font-weight:400; border-top:2px solid black; padding-top:0.5rem; margin-top:-2px;">
+      PARTNERS
+    </div>
+  </div>
+</div>
+
+
+
+        </div>
       </div>
     </div>
   </section>
+
 
 
 
@@ -1196,7 +1293,7 @@
 
   <!-- CAREERS SECTION (Row 3) -->
   <section class="careers-section py-5">
-    <div class="container">
+    <div class="container-fluid">
       <div class="row align-items-start d-flex flex-column flex-lg-row">
 
         <!-- Left col-md-6 col-12: Careers intro -->
@@ -1389,74 +1486,75 @@
     <div class="container-fluid py-5">
 
       <!-- Row 1: Links + Contact and Subscribe -->
-      <div class="row " style="margin: 7rem 0px"">
+      <div class="row " style="margin: 7rem 0px 0px 0px">
         <!-- Left col-md-6 col-12: Links + Contact -->
         <div class=" col-12 col-md-6 mb-4 d-flex justify-content-center">
-        <!-- Wrapper: centered -->
-        <div class="d-flex flex-column flex-md-row align-items-start justify-content-center" style="gap:5rem;">
+          <!-- Wrapper: centered -->
+          <div class="d-flex flex-column flex-md-row align-items-start justify-content-center" style="gap:5rem;">
 
-          <!-- Links -->
-          <div class="d-flex flex-column" style="gap:3rem;">
-            <h5 class="fw-bold mb-3">AUTONO</h5>
-            <div><a href="https://www.wix.com/demone2/autono/technology" class="footer-link">Technology</a></div>
-            <div><a href="https://www.wix.com/demone2/autono/about" class="footer-link">About</a></div>
-            <div><a href="https://www.wix.com/demone2/autono/careers" class="footer-link">Careers</a></div>
+            <!-- Links -->
+            <div class="d-flex flex-column" style="gap:3rem;">
+              <h5 class="fw-bold mb-3">AUTONO</h5>
+              <div><a href="https://www.wix.com/demone2/autono/technology" class="footer-link">Technology</a></div>
+              <div><a href="https://www.wix.com/demone2/autono/about" class="footer-link">About</a></div>
+              <div><a href="https://www.wix.com/demone2/autono/careers" class="footer-link">Careers</a></div>
+            </div>
+
+            <!-- Contact -->
+            <div class="d-flex flex-column" style="gap:3rem;margin-top: 90px;">
+              <div>Tel: 123-456-7890</div>
+              <div>Email: <a href="mailto:info@mysite.com" class="footer-link">info@mysite.com</a></div>
+              <div>500 Terry Francine St<br>San Francisco, CA 94158</div>
+            </div>
+
           </div>
-
-          <!-- Contact -->
-          <div class="d-flex flex-column" style="gap:3rem;margin-top: 90px;">
-            <div>Tel: 123-456-7890</div>
-            <div>Email: <a href="mailto:info@mysite.com" class="footer-link">info@mysite.com</a></div>
-            <div>500 Terry Francine St<br>San Francisco, CA 94158</div>
-          </div>
-
         </div>
+
+
+
+
+        <!-- Right col-md-6 col-12: Subscribe form -->
+        <div class="col-12 col-md-6 mb-4 d-flex justify-content-center align-items-center">
+          <!-- Inner wrapper: reduced width + centered -->
+          <div class="d-flex flex-column gap-3 w-100" style="max-width: 400px; margin: 2rem 0; padding: 4rem 0;">
+
+            <!-- Title -->
+            <div>
+              <h5 class=" mb-2">SUBSCRIBE</h5>
+            </div>
+
+            <!-- Description -->
+            <div>
+              <p class="mb-3">Sign up to receive Autono news and updates.</p>
+            </div>
+
+            <!-- Form -->
+            <form class="d-flex flex-column gap-3">
+              <div>
+
+                <label for="subscribeEmail" class="form-label mb-0">Email*</label>
+              </div>
+
+              <!-- Input + Button on same line -->
+              <div class="d-flex flex-row gap-2 align-items-end">
+                <input type="email" id="subscribeEmail" class="form-control footer-input" placeholder="Enter your email"
+                  required>
+                <button type="submit" class="btn btn-dark fw-semibold px-4">Subscribe</button>
+              </div>
+
+              <!-- Consent checkbox -->
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="subscribeConsent" required>
+                <label class="form-check-label" for="subscribeConsent">
+                  Yes, subscribe me to your newsletter.*
+                </label>
+              </div>
+
+            </form>
+          </div>
+        </div>
+
       </div>
-
-
-
-
-      <!-- Right col-md-6 col-12: Subscribe form -->
-     <div class="col-12 col-md-6 mb-4 d-flex justify-content-center align-items-center">
-  <!-- Inner wrapper: reduced width + centered -->
-  <div class="d-flex flex-column gap-3 w-100" style="max-width: 400px; margin: 2rem 0; padding: 4rem 0;">
-    
-    <!-- Title -->
-    <div>
-      <h5 class="fw-bold mb-2">SUBSCRIBE</h5>
-    </div>
-
-    <!-- Description -->
-    <div>
-      <p class="mb-3">Sign up to receive Autono news and updates.</p>
-    </div>
-
-    <!-- Form -->
-    <form class="d-flex flex-column gap-3">
-      <div>
-
-        <label for="subscribeEmail" class="form-label mb-0">Email*</label>
-      </div>
-      
-      <!-- Input + Button on same line -->
-      <div class="d-flex flex-row gap-2 align-items-end">
-        <input type="email" id="subscribeEmail" class="form-control footer-input" placeholder="Enter your email" required>
-        <button type="submit" class="btn btn-dark fw-semibold px-4">Subscribe</button>
-      </div>
-
-      <!-- Consent checkbox -->
-      <div class="form-check">
-        <input class="form-check-input" type="checkbox" id="subscribeConsent" required>
-        <label class="form-check-label" for="subscribeConsent">
-          Yes, subscribe me to your newsletter.*
-        </label>
-      </div>
-
-    </form>
-  </div>
-</div>
-
-</div>
 
     </div>
 
@@ -1464,21 +1562,73 @@
     <hr class="my-4">
 
     <!-- Row 2: Copyright + Icons -->
+
+    <head>
+      <!-- Bootstrap CSS -->
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+      <!-- Bootstrap Icons -->
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    </head>
+
     <div class="row align-items-center">
-      <div class="col-12 col-md-6 text-muted">
+      <div class="col-12 col-md-5 text-muted m-md-4 p-md-3">
         © 2035 by Autono. Powered and secured by
         <a href="https://wix.com/?utm_campaign=vir_created_with" class="footer-link">Wix</a>
       </div>
-      <div class="col-12 col-md-6 text-md-end mt-3 mt-md-0">
-        <a href="#" class="footer-icon me-3"><i class="bi bi-facebook"></i></a>
-        <a href="#" class="footer-icon me-3"><i class="bi bi-twitter"></i></a>
-        <a href="#" class="footer-icon"><i class="bi bi-instagram"></i></a>
+      <div class="col-12 col-md-5 d-flex justify-content-md-end align-items-center mt-3 m-md-4 p-md-3 ">
+        <a href="#" class="footer-icon me-5"><i class="bi bi-linkedin" style="color:black;"></i></a>
+        <a href="#" class="footer-icon me-5"><i class="bi bi-facebook" style="color:black;"></i></a>
+        <a href="#" class="footer-icon me-5"><i class="bi bi-twitter" style="color:black;"></i></a>
+        <a href="#" class="footer-icon"><i class="bi bi-instagram" style="color:black;"></i></a>
       </div>
     </div>
 
+
     </div>
   </footer>
+  <style>
+    /* Base footer typography */
+    .footer-autono {
+      font-family: 'Montserrat', sans-serif;
+      font-style: normal;
+      font-weight: 100;
+      color: rgb(0, 0, 0);
+      font-size: clamp(14px, 1.2vw, 16px);
+      /* responsive size */
+      line-height: clamp(18px, 1.5vw, 19px);
+    }
 
+    /* Company logo (AUTONO) */
+    .footer-autono h5:first-child {
+      letter-spacing: 5px;
+      /* spacing for company name */
+      font-size: clamp(16px, 1.5vw, 18px);
+      /* keep it slightly larger */
+
+    }
+
+    /* Subscribe heading */
+    .footer-autono h5.fw-bold {
+      font-size: clamp(16px, 1.5vw, 18px);
+      /* responsive 18px */
+    }
+
+    /* Links */
+    .footer-autono .footer-link {
+      color: rgb(0, 0, 0);
+      text-decoration: none;
+    }
+
+    .footer-autono .footer-link:hover {
+      text-decoration: underline;
+    }
+
+    /* Icons */
+    .footer-autono .footer-icon i {
+      color: rgb(0, 0, 0);
+      font-size: 1.2rem;
+    }
+  </style>
 
 
 
