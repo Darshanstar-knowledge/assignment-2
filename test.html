@@ -472,87 +472,84 @@
     </video>
 
     <!-- Navigation -->
-   <!-- Custom Navbar Row -->
-<!-- Navbar -->
-<nav class="navbar navbar-expand-lg bg-transparent px-md-5 py-md-4" style="z-index:1000;">
-  <div class="container-fluid">
+    <!-- Custom Navbar Row -->
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg bg-transparent px-md-5 py-md-4" style="z-index:1000;">
+      <div class="container-fluid">
 
-    <!-- Brand -->
-    <a href="https://www.wix.com/demone2/autono" 
-       class="navbar-brand fw-bold text-black" 
-       style="letter-spacing:3px;">
-       AUTONO
-    </a>
+        <!-- Brand -->
+        <a href="https://www.wix.com/demone2/autono" class="navbar-brand fw-bold text-black"
+          style="letter-spacing:3px;">
+          AUTONO
+        </a>
 
-    <!-- Desktop links (visible on lg+) -->
-    <div class="d-none d-lg-flex ms-auto">
-      <ul class="navbar-nav gap-3 mb-0">
-        <li class="nav-item">
-          <a href="https://www.wix.com/demone2/autono/technology" class="nav-link text-black">Technology</a>
-        </li>
-        <li class="nav-item">
-          <a href="https://www.wix.com/demone2/autono/about" class="nav-link text-black">About</a>
-        </li>
-        <li class="nav-item">
-          <a href="https://www.wix.com/demone2/autono/careers" class="nav-link text-black">Careers</a>
-        </li>
-        <li class="nav-item">
-          <!-- "More" styled as button -->
-          <a href="#" 
-             class="btn btn-dark rounded-3 border  text-white"
-             style="transition:all 0.3s;">
-             Subscribe
-          </a>
-        </li>
-      </ul>
+        <!-- Desktop links (visible on lg+) -->
+        <div class="d-none d-lg-flex ms-auto">
+          <ul class="navbar-nav gap-3 mb-0">
+            <li class="nav-item">
+              <a href="https://www.wix.com/demone2/autono/technology" class="nav-link text-black">Technology</a>
+            </li>
+            <li class="nav-item">
+              <a href="https://www.wix.com/demone2/autono/about" class="nav-link text-black">About</a>
+            </li>
+            <li class="nav-item">
+              <a href="https://www.wix.com/demone2/autono/careers" class="nav-link text-black">Careers</a>
+            </li>
+            <li class="nav-item">
+              <!-- "More" styled as button -->
+              <a href="#" class="btn btn-dark rounded-3 border  text-white" style="transition:all 0.3s;">
+                Subscribe
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Mobile toggler (visible on < lg) -->
+        <button class="navbar-toggler d-lg-none border-0" type="button" data-bs-toggle="offcanvas"
+          data-bs-target="#navOverlay" aria-controls="navOverlay" aria-label="Toggle navigation"
+          style="filter: invert(100%);">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </div>
+    </nav>
+
+    <!-- Fullscreen white overlay (hidden by default; opens on toggler click) -->
+    <div class="offcanvas offcanvas-top d-lg-none" tabindex="-1" id="navOverlay"
+      style="height:100vh; background:white; z-index:9999;">
+      <div class="offcanvas-body p-0 d-flex flex-column justify-content-center align-items-center h-100">
+        <ul class="list-unstyled text-center">
+          <li class="mb-3"><a href="https://www.wix.com/demone2/autono/technology"
+              class="fs-3 text-black">Technology</a></li>
+          <li class="mb-3"><a href="https://www.wix.com/demone2/autono/about" class="fs-3 text-black">About</a></li>
+          <li class="mb-3"><a href="https://www.wix.com/demone2/autono/careers" class="fs-3 text-black">Careers</a></li>
+          <li class="mb-3">
+            <!-- "More" styled as button inside overlay -->
+            <a href="#" class="btn btn-dark rounded-3 border  text-white fs-3" style="transition:all 0.3s;">
+              Subscribe
+            </a>
+          </li>
+        </ul>
+
+        <!-- Close button -->
+        <button type="button" class="btn btn-outline-dark mt-4 rounded-3" data-bs-dismiss="offcanvas"
+          aria-label="Close">
+          Close
+        </button>
+      </div>
     </div>
 
-    <!-- Mobile toggler (visible on < lg) -->
-    <button class="navbar-toggler d-lg-none border-0" type="button"
-            data-bs-toggle="offcanvas" data-bs-target="#navOverlay" aria-controls="navOverlay"
-            aria-label="Toggle navigation" style="filter: invert(100%);">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-  </div>
-</nav>
+    <!-- Bootstrap CSS & JS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 
-<!-- Fullscreen white overlay (hidden by default; opens on toggler click) -->
-<div class="offcanvas offcanvas-top d-lg-none" tabindex="-1" id="navOverlay"
-     style="height:100vh; background:white; z-index:9999;">
-  <div class="offcanvas-body p-0 d-flex flex-column justify-content-center align-items-center h-100">
-    <ul class="list-unstyled text-center">
-      <li class="mb-3"><a href="https://www.wix.com/demone2/autono/technology" class="fs-3 text-black">Technology</a></li>
-      <li class="mb-3"><a href="https://www.wix.com/demone2/autono/about" class="fs-3 text-black">About</a></li>
-      <li class="mb-3"><a href="https://www.wix.com/demone2/autono/careers" class="fs-3 text-black">Careers</a></li>
-      <li class="mb-3">
-        <!-- "More" styled as button inside overlay -->
-        <a href="#" 
-           class="btn btn-dark rounded-3 border  text-white fs-3"
-           style="transition:all 0.3s;">
-           Subscribe
-        </a>
-      </li>
-    </ul>
-
-    <!-- Close button -->
-    <button type="button" class="btn btn-outline-dark mt-4 rounded-3" data-bs-dismiss="offcanvas" aria-label="Close">
-      Close
-    </button>
-  </div>
-</div>
-
-<!-- Bootstrap CSS & JS -->
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-
-<!-- Custom hover style -->
-<style>
-  .btn-dark:hover {
-    background-color: white !important;
-    color: black !important;
-    border: 1px solid black !important;
-  }
-</style>
+    <!-- Custom hover style -->
+    <style>
+      .btn-dark:hover {
+        background-color: white !important;
+        color: black !important;
+        border: 1px solid black !important;
+      }
+    </style>
 
 
 
@@ -565,7 +562,7 @@
       <div class="container pt-5">
         <div class="row">
           <div class="col-12 col-md-8 mx-auto text-center">
-            <h1 class=" text-black headerhead">THE FUTURE OF MOBILITY IS HERE</h1>
+            <h1 class=" text-black headerhead" style="letter-spacing: 5px;">THE FUTURE OF MOBILITY IS HERE</h1>
           </div>
         </div>
         <div class="row mt-3">
@@ -729,7 +726,7 @@
           color: rgb(0, 0, 0);
           font-size: clamp(18px, 3vw, 24px);
           line-height: clamp(28px, 5vw, 43px);
-          padding-left: 20px;
+          padding-left: 70px;
           margin-left: -50px;
         }
       </style>
@@ -796,7 +793,7 @@
               Read More
             </a>
             <!-- Arrow box -->
-            <div class="arrow-box rounded-end-2" style="height: inherit;">
+            <div class="arrow-box rounded-end-2" style="height: inherit;color: #000;">
               &rarr;
             </div>
           </div>
@@ -854,11 +851,11 @@
             <div class="d-flex">
               <!-- Button -->
               <a href="https://www.wix.com/demone2/autono/technology"
-                class="btn btn-outline-dark btn-md rounded-start-2 rounded-end-0">
+                class="btn btn-outline-dark btn-md rounded-start-2 rounded-end-0 ">
                 Read More
               </a>
               <!-- Arrow box -->
-              <div class="arrow-box rounded-end-2" style="height: inherit;">
+              <div class="arrow-box rounded-end-2" style="height: inherit;color: #000;">
                 &rarr;
               </div>
             </div>
@@ -951,7 +948,7 @@
                 Read More
               </a>
               <!-- Arrow box -->
-              <div class="arrow-box rounded-end-2" style="height: inherit;">
+              <div class="arrow-box rounded-end-2" style="height: inherit;color: #000;">
                 &rarr;
               </div>
             </div>
@@ -1110,49 +1107,57 @@
           </div>
 
           <div class="d-grid" style="grid-template-columns:1fr 1fr; gap:6rem;">
-  <!-- Stat 1 -->
-  <div class="mx-auto text-start" style="max-width:200px;">
-    <div style="font-size:clamp(24px,2vw,32px); font-weight:600;">
-      <span style="border-bottom:5px solid black; display:inline-block; line-height:1; margin-bottom:-6px; padding-bottom:2px;">2</span>
-      <span style="display:inline-block;">00</span>
-    </div>
-    <div style="font-size:clamp(14px,1.2vw,16px); font-weight:400; border-top:2px solid black; padding-top:0.5rem; margin-top:-2px;">
-      EMPLOYEES
-    </div>
-  </div>
+            <!-- Stat 1 -->
+            <div class="mx-auto text-start" style="max-width:200px;">
+              <div style="font-size:clamp(24px,2vw,32px); font-weight:600;">
+                <span
+                  style="border-bottom:5px solid black; display:inline-block; line-height:1; margin-bottom:-6px; padding-bottom:2px;">2</span>
+                <span style="display:inline-block;">00</span>
+              </div>
+              <div
+                style="font-size:clamp(14px,1.2vw,16px); font-weight:400; border-top:2px solid black; padding-top:0.5rem; margin-top:-2px;">
+                EMPLOYEES
+              </div>
+            </div>
 
-  <!-- Stat 2 -->
-  <div class="mx-auto text-start" style="max-width:200px;">
-    <div style="font-size:clamp(24px,2vw,32px); font-weight:600; " >
-      <span style="border-bottom:5px solid black; display:inline-block; line-height:1; margin-bottom:-6px; padding-bottom:2px;">5</span>
-    </div>
-    <div style="font-size:clamp(14px,1.2vw,16px); font-weight:400; border-top:2px solid black; padding-top:0.5rem; margin-top:-2px;">
-      CORE TEAMS
-    </div>
-  </div>
+            <!-- Stat 2 -->
+            <div class="mx-auto text-start" style="max-width:200px;">
+              <div style="font-size:clamp(24px,2vw,32px); font-weight:600; ">
+                <span
+                  style="border-bottom:5px solid black; display:inline-block; line-height:1; margin-bottom:-6px; padding-bottom:2px;">5</span>
+              </div>
+              <div
+                style="font-size:clamp(14px,1.2vw,16px); font-weight:400; border-top:2px solid black; padding-top:0.5rem; margin-top:-2px;">
+                CORE TEAMS
+              </div>
+            </div>
 
-  <!-- Stat 3 -->
-  <div class="mx-auto text-start" style="max-width:200px;">
-    <div style="font-size:clamp(24px,2vw,32px); font-weight:600;">
-      <span style="border-bottom:5px solid black; display:inline-block; line-height:1; margin-bottom:-6px; padding-bottom:2px;">2</span>
-      <span style="display:inline-block;">00M$</span>
-    </div>
-    <div style="font-size:clamp(14px,1.2vw,16px); font-weight:400; border-top:2px solid black; padding-top:0.5rem; margin-top:-2px;">
-      CAPITAL
-    </div>
-  </div>
+            <!-- Stat 3 -->
+            <div class="mx-auto text-start" style="max-width:200px;">
+              <div style="font-size:clamp(24px,2vw,32px); font-weight:600;">
+                <span
+                  style="border-bottom:5px solid black; display:inline-block; line-height:1; margin-bottom:-6px; padding-bottom:2px;">2</span>
+                <span style="display:inline-block;">00M$</span>
+              </div>
+              <div
+                style="font-size:clamp(14px,1.2vw,16px); font-weight:400; border-top:2px solid black; padding-top:0.5rem; margin-top:-2px;">
+                CAPITAL
+              </div>
+            </div>
 
-  <!-- Stat 4 -->
-  <div class="mx-auto text-start" style="max-width:200px;">
-    <div style="font-size:clamp(24px,2vw,32px); font-weight:600;">
-      <span style="border-bottom:5px solid black; display:inline-block; line-height:1; margin-bottom:-6px; padding-bottom:2px;">3</span>
-      <span style="display:inline-block;">26</span>
-    </div>
-    <div style="font-size:clamp(14px,1.2vw,16px); font-weight:400; border-top:2px solid black; padding-top:0.5rem; margin-top:-2px;">
-      PARTNERS
-    </div>
-  </div>
-</div>
+            <!-- Stat 4 -->
+            <div class="mx-auto text-start" style="max-width:200px;">
+              <div style="font-size:clamp(24px,2vw,32px); font-weight:600;">
+                <span
+                  style="border-bottom:5px solid black; display:inline-block; line-height:1; margin-bottom:-6px; padding-bottom:2px;">3</span>
+                <span style="display:inline-block;">26</span>
+              </div>
+              <div
+                style="font-size:clamp(14px,1.2vw,16px); font-weight:400; border-top:2px solid black; padding-top:0.5rem; margin-top:-2px;">
+                PARTNERS
+              </div>
+            </div>
+          </div>
 
 
 
@@ -1174,8 +1179,8 @@
         <!-- Left col-md-6 col-12: text content -->
         <div class="col-12 col-md-6">
           <div
-            class="service-box-black bg-black text-white p-4 h-auto d-flex flex-column gap-3 flexmd-row align-content-center justify-content-center  rounded-5"
-            style="width: clamp(17rem, 100vw, 35rem);">
+            class="service-box-black bg-black text-white  h-auto d-flex flex-column gap-3 flexmd-row align-content-center justify-content-center  rounded-5"
+            style="width: clamp(17rem, 100vw, 35rem);padding-left: 7rem;">
 
             <div class="border1 p-5" style="border-left: solid 1px white;">
               <!-- Heading -->
@@ -1183,7 +1188,7 @@
 
               <!-- h3 wrapper div gets the 5px border -->
               <div class="h1 w-100 border-start border-5 border-white" style="margin-left:-50px">
-                <h3 class="heading-style " style="padding-left: 6rem;">
+                <h3 class="heading-style " style="padding-left: 7.5rem;">
                   Our <br>
                   Partners
                 </h3>
@@ -1287,7 +1292,7 @@
 
 
 
-
+<hr style="margin: 0;">
 
 
 
@@ -1299,8 +1304,8 @@
         <!-- Left col-md-6 col-12: Careers intro -->
         <div class="col-12 col-md-6">
           <div
-            class="service-box-black bg-black text-white p-4 h-auto d-flex flex-column gap-3 align-content-center justify-content-center m-auto rounded-5"
-            style="width: clamp(17rem, 100vw, 35rem);">
+            class="service-box-black bg-black text-white  h-auto d-flex flex-column gap-3 align-content-center justify-content-center m-auto rounded-5"
+            style="width: clamp(17rem, 100vw, 35rem);padding-left: 4rem;">
 
             <div class="border1 p-5" style="border-left: solid 1px white;">
               <!-- Heading -->
@@ -1344,7 +1349,7 @@
         <!-- Right col-md-6 col-12: Carousel of job positions -->
 
         <div class="col-12 col-md-6 d-flex justify-content-center">
-          <div id="carouselCareers" class="carousel slide border border-2 border-white rounded" data-bs-ride="carousel"
+          <div id="carouselCareers" class="carousel slide border border-2 border-white rounded-3" data-bs-ride="carousel"
             style="max-width: 25rem; ">
 
             <!-- Indicators -->
@@ -1544,7 +1549,7 @@
 
               <!-- Consent checkbox -->
               <div class="form-check">
-                <input class="form-check-input" type="checkbox" id="subscribeConsent" required>
+                <input class="form-check-input border border-1 border-black" type="checkbox" id="subscribeConsent" required >
                 <label class="form-check-label" for="subscribeConsent">
                   Yes, subscribe me to your newsletter.*
                 </label>
