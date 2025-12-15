@@ -1,52 +1,100 @@
 /* Video background */
-  .video-bg { object-fit: cover; z-index: 0; }
+.video-bg {
+  object-fit: cover;
+  z-index: 0;
+}
 
-  /* Navbar */
-  .nav-z { z-index: 1000; }
-  .brand-spacing { letter-spacing: 3px; }
-  .invert-filter { filter: invert(100%); }
+/* Navbar */
+.nav-z {
+  z-index: 1000;
+}
+.brand-spacing {
+  letter-spacing: 3px;
+}
+.invert-filter {
+  filter: invert(100%);
+}
 
-  /* Offcanvas */
-  .offcanvas-custom { height: 100vh; background: white; z-index: 9999; }
+/* Offcanvas */
+.offcanvas-custom {
+  height: 100vh;
+  background: white;
+  z-index: 9999;
+}
 
-  /* Hero content */
-  .hero-padding { padding-top: 13vh; }
-  .letter-spacing-5 { letter-spacing: 5px; }
+/* Hero content */
+.hero-padding {
+  padding-top: 13vh;
+}
+.letter-spacing-5 {
+  letter-spacing: 5px;
+}
 
-  /* Bottom image */
-  .bottom-img { bottom: -180px; z-index: 2; }
+/* Bottom image */
+.bottom-img {
+  bottom: -180px;
+  z-index: 2;
+}
 
-  /* Hover style */
-  .btn-dark:hover {
-    background-color: white !important;
-    color: black !important;
-    border: 1px solid black !important;
-  }
+.letter-spacing-AUTONO {
+  letter-spacing: 10px;
+}
 
-  /* Heading typography */
-  .headerhead {
-    font-size: clamp(1.5rem, 5vw, 4rem);
-    font-weight: 100;
-    line-height: clamp(2rem, 7vw, 6rem);
-    font-family: "Montserrat", sans-serif;
-    letter-spacing: 2px;
-  }
-  .headerp {
-    font-size: clamp(1rem, 3vw, 1.5rem);
-    font-weight: 400;
-    line-height: clamp(1.4rem, 4vw, 2.7rem);
-    font-family: "Montserrat", sans-serif;
-    letter-spacing: 1px;
-  }
+/* Letter spacing utility */
+.letter-spacing {
+  letter-spacing: 2px;
+}
 
-  /* Navbar state classes */
-  .navbar-transparent {
-    background-color: transparent !important;
-    box-shadow: none !important;
-    transition: background-color 0.3s ease, box-shadow 0.3s ease;
-  }
-  .navbar-solid {
-    background-color: white !important;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1) !important;
-    transition: background-color 0.3s ease, box-shadow 0.3s ease;
-  }
+/* Hover effect for nav links only */
+.nav-hover:hover {
+  color: rgb(255, 166, 0) !important;
+  transition: color 0.3s ease;
+}
+
+/* Hover style */
+.btn-dark:hover {
+  background-color: white !important;
+  color: black !important;
+  border: 1px solid black !important;
+}
+
+/* Heading typography */
+.headerhead {
+  font-size: clamp(1.5rem, 5vw, 4rem);
+  font-weight: 100;
+  line-height: clamp(2rem, 7vw, 6rem);
+  font-family: "Montserrat", sans-serif;
+  letter-spacing: 2px;
+}
+
+
+/* Mobile/tablet: responsive with clamp */
+
+
+.headerp {
+
+  font-size: clamp(1rem, 3vw, 24px); /* force max to 24px */
+
+
+
+  font-weight: 400;
+  line-height: clamp(1.4rem, 4vw, 2.7rem);
+  font-family: "Montserrat", sans-serif;
+  letter-spacing: 1px;
+}
+
+/* Navbar state classes */
+.navbar-transparent {
+  background-color: transparent !important;
+  box-shadow: none !important;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+.navbar-solid {
+  background-color: white !important;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1) !important;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.letter-spacing {
+  letter-spacing: 1px;
+}
