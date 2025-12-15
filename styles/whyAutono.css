@@ -1,0 +1,60 @@
+
+  /* Custom width for the box (clamp) */
+  .box-width {
+    width: clamp(17rem, 100vw, 35rem);
+  }
+
+  /* Negative margin for overlap */
+  .ml-n50 {
+    margin-left: -50px;
+  }
+
+  /* Vision text */
+  .vision-text {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    color: #fff;
+    font-size: clamp(12px, 2vw, 14px);
+    line-height: clamp(16px, 2.5vw, 20px);
+    letter-spacing: 2px;
+  }
+
+  /* Heading style */
+  .heading-style {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    color: #fff;
+    font-size: clamp(18px, 2.5vw, 24px);
+    line-height: clamp(28px, 4vw, 43px);
+  }
+
+  /* Paragraph style */
+  .fontp {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    color: rgb(200, 200, 200);
+    font-size: clamp(14px, 2.5vw, 18px);
+    line-height: clamp(20px, 4vw, 28px);
+  }
+
+  /* Parallax section background */
+  .why-autono-section {
+    position: relative;
+    min-height: 600px;
+    background-image: url('https://static.wixstatic.com/media/c837a6_870aaf57c1d9484a9a6ee57f2465df75~mv2.jpg/v1/fill/w_1351,h_880,al_r,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/c837a6_870aaf57c1d9484a9a6ee57f2465df75~mv2.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+    padding: 60px 0;
+  }
+
+  /* Responsive adjustments */
+  @media (max-width: 767.98px) {
+    .why-autono-section {
+      background-attachment: scroll;
+      padding: 40px 0;
+    }
+  }
+

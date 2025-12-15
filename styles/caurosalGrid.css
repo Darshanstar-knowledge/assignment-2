@@ -1,0 +1,64 @@
+
+  /* Custom widths and spacing */
+  .box-width { width: clamp(17rem, 100vw, 35rem); }
+  .ps-4rem { padding-left: 4rem; }
+  .ps-6rem { padding-left: 6rem; }
+  .ml-n50 { margin-left: -50px; }
+  .max-w-25rem { max-width: 25rem; }
+
+  /* Letter spacing utilities */
+  .ls-08em { letter-spacing: 0.08em; }
+  .ls-04em { letter-spacing: 0.04em; }
+
+  /* Typography */
+  .vision-text {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: clamp(12px, 2vw, 14px);
+    line-height: clamp(16px, 2.5vw, 20px);
+    letter-spacing: 2px;
+  }
+
+  .heading-style {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: clamp(18px, 2.5vw, 24px);
+    line-height: clamp(28px, 4vw, 43px);
+    color: #fff;
+  }
+
+  /* Carousel rounded edges */
+  .carousel-inner {
+    border-radius: 1rem;
+    overflow: hidden;
+  }
+
+  /* Dot indicators */
+  .carousel-indicators [data-bs-target] {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #fff
+
+  }
+  /* Carousel rounded edges */
+  .carousel-inner {
+    border-radius: 1rem;
+    overflow: hidden;
+  }
+
+  /* Dot indicators */
+  .carousel-indicators [data-bs-target] {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #fff;
+    opacity: 0.5;
+    margin: 0 6px;
+  }
+
+  .carousel-indicators .active {
+    opacity: 1;
+    background-color: #000; /* active dot color */
+  }
+

@@ -1,0 +1,55 @@
+
+  /* Base footer typography */
+  .footer-autono {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 100;
+    color: #000;
+    font-size: clamp(14px, 1.2vw, 16px);
+    line-height: clamp(18px, 1.5vw, 19px);
+  }
+
+  /* Company logo (AUTONO) */
+  .footer-autono h5:first-child {
+    letter-spacing: 5px;
+    font-size: clamp(16px, 1.5vw, 18px);
+  }
+
+  /* Links */
+  .footer-link {
+    color: #000;
+    text-decoration: none;
+    font-weight: 500;
+  }
+  .footer-link:hover {
+    color: #555;
+    text-decoration: underline;
+  }
+
+  /* Subscribe box */
+  .subscribe-box {
+    max-width: 400px;
+    margin: 2rem 0;
+    padding: 4rem 0;
+  }
+
+  /* Input */
+  .footer-input {
+    border: 1px solid #ccc;
+    padding: 0.75rem;
+  }
+
+  /* Icons */
+  .footer-icon i {
+    color: #000;
+    font-size: 1.2rem;
+  }
+  .footer-icon i:hover {
+    color: #555;
+  }
+
+  /* Custom spacing utilities */
+  .mt-7rem { margin-top: 7rem; }
+  .gap-5rem { gap: 5rem; }
+  .gap-3rem { gap: 3rem; }
+  .mt-90px { margin-top: 90px; }
+

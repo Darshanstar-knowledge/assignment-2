@@ -1,0 +1,117 @@
+
+  /* Utility replacements */
+  .object-contain { object-fit: contain; }
+  .gap-6rem { gap: 6rem; }
+  .numbers-grid { grid-template-columns: 1fr 1fr; gap: 6rem; }
+  .box-width { width: clamp(17rem, 100vw, 35rem); }
+  .ps-7rem { padding-left: 7rem; }
+  .ml-n50 { margin-left: -50px; }
+
+  /* Numbers heading */
+  .numbers-heading {
+    font-weight: 400;
+    font-size: clamp(20px, 2vw, 28px);
+    margin: 0;
+  }
+
+  /* Stat boxes */
+  .stat-box { max-width: 200px; }
+  .stat-value {
+    font-size: clamp(24px, 2vw, 32px);
+    font-weight: 600;
+  }
+  .stat-highlight {
+    border-bottom: 5px solid black;
+    display: inline-block;
+    line-height: 1;
+    margin-bottom: -6px;
+    padding-bottom: 2px;
+  }
+  .stat-label {
+    font-size: clamp(14px, 1.2vw, 16px);
+    font-weight: 400;
+    border-top: 2px solid black;
+    padding-top: 0.5rem;
+    margin-top: -2px;
+  }
+
+  /* Partner logos */
+  .logo-140 { max-height: 140px; }
+  .logo-64 { max-height: 64px; }
+  .logo-80 { max-height: 80px; }
+  .partner-label {
+    font-size: 14px;
+    letter-spacing: 0.16em;
+  }
+
+
+
+  /* Typography */
+  .vision-text {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: clamp(12px, 2vw, 14px);
+    line-height: clamp(16px, 2.5vw, 20px);
+    letter-spacing: 2px;
+  }
+
+  .heading-style {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: clamp(18px, 2.5vw, 24px);
+    line-height: clamp(28px, 4vw, 43px);
+    color: #fff;
+  }
+
+  .fontp {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    color: rgb(200, 200, 200);
+    font-size: clamp(14px, 2.5vw, 18px);
+    line-height: clamp(20px, 4vw, 28px);
+  }
+
+  /* Utility replacements */
+  .object-contain { object-fit: contain; }
+  .gap-6rem { gap: 6rem; }
+  .numbers-grid { grid-template-columns: 1fr 1fr; gap: 6rem; display: grid; }
+  .box-width { width: clamp(17rem, 100vw, 35rem); }
+  .ps-7rem { padding-left: 7rem; }
+  .ml-n50 { margin-left: -50px; }
+
+  /* Numbers heading */
+  .numbers-heading {
+    font-weight: 400;
+    font-size: clamp(20px, 2vw, 28px);
+    margin: 0;
+  }
+
+  /* Stat boxes */
+  .stat-box { max-width: 200px; }
+  .stat-value {
+    font-size: clamp(24px, 2vw, 32px);
+    font-weight: 600;
+  }
+  .stat-highlight {
+    border-bottom: 5px solid black;
+    display: inline-block;
+    line-height: 1;
+    margin-bottom: -6px;
+    padding-bottom: 2px;
+  }
+  .stat-label {
+    font-size: clamp(14px, 1.2vw, 16px);
+    font-weight: 400;
+    border-top: 2px solid black;
+    padding-top: 0.5rem;
+    margin-top: -2px;
+  }
+
+  /* Partner logos */
+  .logo-140 { max-height: 140px; }
+  .logo-64 { max-height: 64px; }
+  .logo-80 { max-height: 80px; }
+  .partner-label {
+    font-size: 14px;
+    letter-spacing: 0.16em;
+  }
