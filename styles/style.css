@@ -1,12 +1,13 @@
-  body {
-      font-family: 'Montserrat', sans-serif;
-      color: #000;
-      margin: 0px;
-      padding: 0px;
-    }
+body {
+  font-family: "Montserrat", sans-serif;
+  color: #000;
+  margin: 0px;
+  padding: 0px;
+}
 
-  /* Prevent horizontal overflow */
-html, body {
+/* Prevent horizontal overflow */
+html,
+body {
   overflow-x: hidden;
 }
 
@@ -20,21 +21,25 @@ html, body {
   width: 100%; /* instead of 100vw */
 }
 
+/* Hover background white */
+.hover-invert-bg:hover {
+  background-color: #fff !important;
+}
+
+/* Hover text dark */
+.hover-invert-text:hover {
+  color: #000 !important;
+}
+
+/* Hover border dark */
+.hover-invert-border:hover {
+  border-color: #000 !important;
+}
 
 
+/* Default: hidden on small/medium screens */
 
-
-    /* Hover background white */
-    .hover-invert-bg:hover {
-      background-color: #fff !important;
-    }
-
-    /* Hover text dark */
-    .hover-invert-text:hover {
-      color: #000 !important;
-    }
-
-    /* Hover border dark */
-    .hover-invert-border:hover {
-      border-color: #000 !important;
-    }
+.hoverbtn:hover{
+  background-color: wheat;
+  color: black;
+}

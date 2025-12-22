@@ -1,42 +1,90 @@
 
-  .servicesMT{
-    padding: 25rem;
-  }
+
+/* Heading text */
+.heading-style {
+  color: #fff;
+  font-size: clamp(18px, 2.5vw, 24px);
+  line-height: clamp(24px, 3vw, 32px);
+}
+
+/* Paragraph text */
+.para-style {
+  font-size: clamp(14px, 2vw, 16px);
+  line-height: clamp(20px, 2.5vw, 29px);
+  color: #fff;
+}
+
+/* Responsive width for paragraph wrapper */
+.pwidth {
+  width: clamp(260px, 80vw, 360px);
+  max-width: 100%;
+  box-sizing: border-box;
+  word-wrap: break-word;
+}
+
+
+
+
+
+
+.servicesMT {
+  padding: 25rem;
+}
+
+.services {
+  padding-left: 5rem; /* Default for desktop */
+}
+
+.service-box-dark {
+  border-left: 1px solid #ffffff80;
   
-  .services{
-    padding-left: 5rem;
-  }
+}
 
-  .service-box-dark {
-    border-left: 2px solid #fff;
-  }
+.service-box-dark .h1 {
+  
+  margin-left: -50px;
+  
+  min-width: 22rem;
+}
 
-  .service-box-dark .h1 {
-    border-left: 5px solid #fff;
-    margin-left: -50px;
-    padding-left: 2rem;
-    min-width: 22rem;
-  }
+.vision-text {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  color: #fff;
+  font-size: clamp(12px, 2vw, 14px);
+  line-height: clamp(16px, 2.5vw, 20px);
+  letter-spacing: 2px;
+}
 
-  .vision-text {
-    font-family: 'Montserrat', sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    color: #fff;
-    font-size: clamp(12px, 2vw, 14px);
-    line-height: clamp(16px, 2.5vw, 20px);
-    letter-spacing: 2px;
-  }
+.heading-style {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  color: #fff;
+  font-size: clamp(18px, 3vw, 24px);
+  line-height: clamp(28px, 5vw, 43px);
+  min-width: 22rem;
+  letter-spacing: 1px;
+  padding-left: 6rem;
+}
 
-  .heading-style {
-    font-family: 'Montserrat', sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    color: #fff;
-    font-size: clamp(18px, 3vw, 24px);
-    line-height: clamp(28px, 5vw, 43px);
-    min-width: 22rem;
-  }
+.servicetext{
+ 
+  margin-left:  clamp(-50px, -6vw, -20px);
+
+
+  padding-left: 2rem;
+ font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  
+  font-size: 24px;
+  line-height: 43px;
+  
+}
+
+
 
 .para-style {
   font-size: clamp(8px, 1.5vw, 16px);
@@ -45,14 +93,45 @@
   line-height: 29px;
   letter-spacing: 1px;
   color: white;
+
 }
 
-/* Force desktop to exactly 24px */
+.pwidth {
+  width: clamp(280px, 100vw, 360px);
+  max-width: 100%;
+  box-sizing: border-box;
+  word-wrap: break-word;
+}
+
+
+
 @media (min-width: 992px) {
   .para-style {
     font-size: 16px;
   }
+} /* ✅ Mobile fix for padding */
+@media (max-width: 767px) {
+  .services {
+    padding-left: 1rem; /* Reduce padding on mobile */
+  }
+  .servicesMT {
+    padding: 2rem; /* Prevent huge spacing on mobile */
+  }
+} /* ✅ Tablet adjustment */
+@media (min-width: 768px) and (max-width: 991px) {
+  .services {
+    padding-left: 2rem; /* Softer padding for tablets */
+  }
+  .servicesMT {
+    padding: 5rem;
+  }
+} /* Reduce padding on mobile for that row and column */
+@media (max-width: 767px) {
+  .services .row.p-5 {
+    padding: 1rem !important; /* shrink row padding */
+  }
+  .services .col-12.p-5 {
+    padding: 1rem !important; /* shrink column padding */
+  }
+ 
 }
-
-
-

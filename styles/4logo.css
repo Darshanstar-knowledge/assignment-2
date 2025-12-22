@@ -63,13 +63,18 @@
     color: #fff;
   }
 
-  .fontp {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 400;
-    color: rgb(200, 200, 200);
-    font-size: clamp(14px, 2.5vw, 18px);
-    line-height: clamp(20px, 4vw, 28px);
-  }
+ .fontp {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  color: rgb(200, 200, 200);
+
+  /* Desktop: exactly 16px */
+  font-size: clamp(14px, 2.5vw, 16px);
+
+  /* Desktop: exactly 29px */
+  line-height: clamp(20px, 4vw, 29px);
+}
+
 
   /* Utility replacements */
   .object-contain { object-fit: contain; }
