@@ -48,3 +48,18 @@
 .btn + .arrow-box {
   height: 100%;
 }
+
+.services img{
+  scale: (1.9);
+}
+
+.service-ambient {
+  overflow: hidden; 
+}
+
+/* Apply the scale */
+.service-ambient img {
+  transform: scale(1.5);
+  display: block; /* Helps with alignment */
+}
+

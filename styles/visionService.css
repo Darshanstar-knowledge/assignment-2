@@ -30,6 +30,12 @@
 .servicesMT {
   padding: 25rem;
 }
+.servicesMT img{
+  margin-left: 40px;
+transform: scale(1.5)
+
+
+}
 
 .services {
   padding-left: 5rem; /* Default for desktop */

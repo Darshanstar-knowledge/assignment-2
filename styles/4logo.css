@@ -12,6 +12,10 @@
     font-weight: 400;
     font-size: clamp(20px, 2vw, 28px);
     margin: 0;
+    padding-left: 100px;
+    letter-spacing: 2px;
+    width: auto;
+    height: auto;
   }
 
   /* Stat boxes */
@@ -25,7 +29,7 @@
     display: inline-block;
     line-height: 1;
     margin-bottom: -6px;
-    padding-bottom: 2px;
+    padding-bottom: 20px;
   }
   .stat-label {
     font-size: clamp(14px, 1.2vw, 16px);
@@ -98,18 +102,22 @@
     font-weight: 600;
   }
   .stat-highlight {
-    border-bottom: 5px solid black;
+    border-bottom: 2px solid black;
     display: inline-block;
     line-height: 1;
     margin-bottom: -6px;
-    padding-bottom: 2px;
+    padding-bottom: 30px;
   }
   .stat-label {
     font-size: clamp(14px, 1.2vw, 16px);
     font-weight: 400;
-    border-top: 2px solid black;
-    padding-top: 0.5rem;
-    margin-top: -2px;
+    border-top: 1px solid rgba(0, 0, 0, 0.562);
+    padding-top: 1.5rem;
+    margin-top: -19px;
+  }
+
+  .stat-value{
+    padding:  1.5rem 1.5rem 1.5rem 0rem;
   }
 
   /* Partner logos */
@@ -119,4 +127,11 @@
   .partner-label {
     font-size: 14px;
     letter-spacing: 0.16em;
+  }
+
+
+  .numbers{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
   }

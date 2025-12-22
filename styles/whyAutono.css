@@ -1,4 +1,6 @@
 /* Custom width for the box (clamp) */
+
+
 .box-width {
   width: clamp(17rem, 100vw, 35rem);
 }

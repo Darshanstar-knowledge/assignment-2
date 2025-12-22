@@ -6,6 +6,11 @@
     color: #000;
     font-size: clamp(14px, 1.2vw, 16px);
     line-height: clamp(18px, 1.5vw, 19px);
+    
+  }
+  .footer-autono .container-fluid{
+    padding-top: 80px;
+    padding-bottom: 15px;
   }
 
   /* Company logo (AUTONO) */
@@ -52,4 +57,8 @@
   .gap-5rem { gap: 5rem; }
   .gap-3rem { gap: 3rem; }
   .mt-90px { margin-top: 90px; }
+
+.icons{
+  margin-left: 100px;
+}
 
